@@ -93,9 +93,6 @@ header a {
 	padding: 3rem 0 4.5rem;
 }
 
-.content-main  {
-}
-
 .content-main h1 {
 	margin: 1rem 0;
 	padding-bottom:  1rem;
@@ -120,10 +117,6 @@ header a {
 	font-size:  1.3125rem;
 	line-height:  1.7;
 	margin-bottom:  1.5rem;
-}
-
-.content-main h2 {
-
 }
 
 .content-main .tips {
@@ -244,9 +237,6 @@ header a {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	top: 50%;
-	position: relative;
-	transform: translateY(-50%);
 }
 
 .cfx {
@@ -312,6 +302,12 @@ header a {
 }
 
 @media screen and (min-width: 47.5rem){
+
+	.main-menu ul {
+		top: 50%;
+		position: relative;
+		transform: translateY(-50%);
+	}
 
 	.main-menu li {
 		width: 32%;
