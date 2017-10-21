@@ -719,7 +719,7 @@ header .nav-main a {
 
 /* GRAYSCALE IMAGES */
 
-.page-inner .nav-local img, .page-menu main img {
+.page-inner .nav-local img, .main-menu img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     opacity: .9;
