@@ -28,7 +28,7 @@ menuClose.addEventListener("click", function(e){
 
 menuOpen.addEventListener("click", function(e){
 	e.preventDefault();
-	(loaded==0) ? loadNav() : showNav();
+	showNav();
 });
 
 
@@ -46,6 +46,13 @@ function showNav(){
 	menuClose.classList.remove("js-hide");
 }
 
+function init(){
+	// Hide nav open button until nav is loaded
+	menuOpen.classList.add("js-hide");
+	// Load nav
+	loadNav();
+}
+
 function loadNav(){
 	var request = new XMLHttpRequest();
 	request.open('GET', 'menu.html', true);
@@ -60,10 +67,8 @@ function loadNav(){
 	    var tds = htmlDoc.querySelector(".main-menu ul");
 	    // Append .main-menu to requesting page
 	   	mainMenu.appendChild(tds);
-	   	// Content is loaded
-	   	loaded = 1;
-	   	// Show nav overlay
-	   	showNav();
+	   	// Show open nav button once nav is loaded
+	   	menuOpen.classList.remove("js-hide");
 	  } else {
 	    // We reached our target server, but it returned an error
 	    alert("Error");
@@ -79,5 +84,5 @@ function loadNav(){
 
 // Initialize
 
-hideNav();
+init();
 
