@@ -7,7 +7,7 @@ var header = document.querySelector("header");
 // Create Nodes
 
 var mainMenu = document.createElement("nav");
-mainMenu.setAttribute("class","main-menu");
+mainMenu.setAttribute("class","main-menu js-hide");
 document.body.appendChild(mainMenu);
 
 var menuClose = document.createElement("a");
