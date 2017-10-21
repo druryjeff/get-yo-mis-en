@@ -1,0 +1,739 @@
+/* GENERAL */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Domine', serif;
+	font-weight:  400;
+	line-height: 1.5;
+	color: #2f2724;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 67.5rem;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 3rem 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h4 {
+	font-family: 'Domine', serif;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+
+h2 + ul, h2 + ol {
+	font-size:  .875rem;
+}
+
+
+/* MASTHEAD */
+
+header {
+	overflow: hidden;
+	position: relative;
+	background-color: #ccc;
+}
+
+header h1 {
+	float: left;
+	width: 75%;
+	line-height: 4.5rem;
+	margin: 0 0 0 5%;
+	font-size: 1.875rem;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+header a {
+    color:  #fff;
+}
+
+.gyme-logo {
+	position: relative;
+	top: .75rem;
+	width: 22%;
+	min-width: 216px;
+}
+
+.menu-open,
+.menu-close {
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 15%;
+	text-align: right;
+	line-height: 4.5rem;
+	margin: 0 5% 0 0;
+}
+
+.menu-close:hover {
+	cursor: pointer;
+}
+
+/* INNER - MAIN */
+
+.page-inner main {
+	padding: 3rem 0 4.5rem;
+}
+
+.content-main  {
+}
+
+.content-main h1 {
+	margin: 1rem 0;
+	padding-bottom:  1rem;
+	font-size: 3rem;
+	line-height: 1;
+	border-bottom:  1px solid #ccc;
+}
+
+.content-main .pub-date {
+	font-size: .75rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #BDBDBD;
+}
+
+.content-main .pub-date .fa {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.content-main .lead-in {
+	font-size:  1.3125rem;
+	line-height:  1.7;
+	margin-bottom:  1.5rem;
+}
+
+.content-main h2 {
+
+}
+
+.content-main .tips {
+	clear: left;
+	margin-bottom: 3rem;
+	padding: 1.5rem 10% 1.5rem 5%;
+	background-color: #e5e5e5;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.content-main .col ul,
+.content-main .col ol,
+.content-main .tips ul {
+	padding-left:  .875rem;
+	margin-bottom: 1.5rem;
+}
+
+.content-main .col:nth-of-type(1) ul {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	letter-spacing: .5px;
+}
+
+.content-main li {
+	margin-bottom: .25rem;
+}
+
+.content-main li h4 {
+	margin: 0;
+}
+
+.content-side {
+	position:  relative;
+	padding-top: 3rem;
+	padding-bottom: 1.5rem;
+}
+
+.content-side img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: -1rem auto 0;
+  border: 10px solid #fff;
+  box-shadow: 0 0 10px rgba(33,33,33,.2);
+  position: relative;
+}
+
+.content-side img:nth-child(odd) {
+	transform: rotate(5deg);
+}
+
+.content-side img:nth-child(even) {
+	transform: rotate(-5deg);
+	margin-left: 3rem;
+}
+
+@media screen and (min-width: 47.5rem){
+
+	.content-main {
+		width: 65%;
+		float: left;
+	}
+
+	.content-main .col {
+		float:  left;
+		margin-bottom:  3rem;
+	}
+
+	.content-main .col:nth-of-type(1) {
+		width: 20%;
+		margin-right: 5%;
+	}
+
+	.content-main .col:nth-of-type(2) {
+		width: 75%;
+	}
+
+	.content-main .tips {
+		margin-left:  -5%;
+		margin-right:  -5%;
+		margin-bottom: 0;
+	}
+
+	.content-side {
+		top: -6rem;
+		width: 30%;
+		float: left;
+		margin-left: 5%;
+		overflow: hidden;
+	}
+
+}
+
+
+/* MENU - MAIN */
+
+.main-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: url(../img/cutting-board-menu.gif);
+}
+
+.main-menu {
+	padding: 0 5%;
+	overflow: hidden;
+}
+
+.main-menu h1 {
+	margin-top: 0;
+}
+
+.main-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+}
+
+.cfx {
+	clear: both;
+}
+
+.main-menu li {
+	position: relative;
+	counter-increment: step-counter;
+	/*transition: transform .4s;*/
+}
+
+.main-menu li:hover img{
+    -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
+}
+
+.main-menu li a {
+	display: block;
+	overflow: hidden;
+}
+
+.main-menu li h4 {
+	margin: 0;
+	font-size: 3rem;
+	line-height: 1;
+	color: #FFA000;
+	position: relative;
+	z-index: 2;
+}
+
+.main-menu li p {
+	margin-bottom: 1rem;
+	color: #fff;
+}
+
+.main-menu li:last-child {
+	margin-bottom: 10rem;
+}
+
+.main-menu li img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+	border: 10px solid #fff;
+	transition: all .4s;
+	position: relative;
+	z-index: 100;
+}
+
+.main-menu li:before {
+	position: absolute;
+	z-index: 2;
+	right: 1%;
+	top: 60%;
+    content: counter(step-counter);
+    display: block;
+    font-size: 10rem;
+	font-family: 'Domine', serif;
+	font-weight: 700;
+	color: rgba(255,255,255,.2)
+}
+
+@media screen and (min-width: 47.5rem){
+
+	.main-menu li {
+		width: 32%;
+		margin-right: 2%;
+		float: left;
+	}
+
+	.main-menu li:nth-child(3) {
+		margin-right: 0;
+	}
+
+	.main-menu li:hover {
+		/*transform: scale(1.1) rotate(5deg);*/
+	}
+
+	.main-menu li p {
+		margin-bottom: 3rem;
+	}
+
+	.main-menu li:last-child {
+		margin-bottom: 3rem;
+	}
+
+}
+
+
+/* HOME - MAIN */
+
+.page-home {
+	background: url(../img/chicken-10a.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.page-home main {
+	position: relative;
+	padding: 5.5rem 5%;
+}
+
+.page-home main h1 {
+	margin: 0 0 1.875rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 900;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: .6;
+}
+
+.page-home main h1 span {
+	display: block;
+}
+
+.page-home main ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.page-home main li {
+	position: relative;
+	margin-bottom: .5rem;
+}
+
+.page-home main li h4 {
+	display: inline-block;
+	margin: 0 0 .25rem;
+	font-size: 1.5rem;
+}
+
+.page-home li a p {
+	position: relative;
+	margin: 0;
+}
+
+.page-home li a h4 span,
+.page-home li a p span {
+	display: inline;
+	padding: .25rem 0;
+    color:  #fff;
+	background-color: #212121;
+}
+
+@media screen and (min-width: 47.5rem){
+
+	.page-home main h1 {
+		position: absolute;
+		top: 14rem;
+		right: -3.25rem;
+		transform: rotate(-90deg);
+		font-size: 1.875rem;
+		text-align: right;
+	}
+
+	/* Basic styles for positioned list items */
+
+	.page-home main li {
+		position: absolute;
+		width: 30%;
+	}
+
+	.page-home main li h4 {
+		margin-bottom: .75rem;
+		font-size: 1.875rem;
+	}
+
+	.page-home main li p {
+		font-size: 1.25rem;
+	}
+
+	.page-home main li h4 span,
+	.page-home main li p span {
+		padding: .5rem;
+	}
+
+	.page-home main li p span {
+		color: #FFC107;
+	}
+
+	/* Overwrite list styles for first, featured list item */
+
+	.page-home main li:nth-child(1) {
+		width: 60%;
+		bottom: 5.5rem;
+		right: 5%;
+		text-align: right;
+	}
+
+	.page-home main li:nth-child(1)::before {
+		display: block;
+		position: absolute;
+		top: -8.25rem;
+		right: 33%;
+		content: url(../img/arrow.svg);
+		width: 35%;
+		height: auto;
+	}
+
+	.page-home main li:nth-child(1) h4 {
+		font-size: 3.5rem;
+	}
+
+	.page-home main li:nth-child(1) p {
+		font-size: 1.5rem;
+	}
+
+	/* Set Bottom Position for Second and Third Headlines */
+
+	.page-home main li:nth-child(2) {
+		bottom: 13.5rem;
+	}
+
+	.page-home main li:nth-child(3) {
+		bottom: 5.5rem;
+	}
+
+}
+
+
+/* NAV LOCAL */
+
+.nav-local {
+	clear: both;
+	overflow: hidden;
+}
+
+.nav-local ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow:  hidden;
+}
+
+.nav-local li {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	padding-left: 5%;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .4s;
+	/*mix-blend-mode: multiply;*/
+}
+
+.nav-local li:hover {
+	-webkit-filter: grayscale(0);
+    filter: grayscale(0);
+	/*mix-blend-mode: multiply;*/
+}
+
+.nav-local li a {
+	display:  block;
+}
+
+.nav-local li:nth-child(1)::before {
+	display: block;
+	margin-bottom: .5rem;
+	content: 'Previous';
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color:  #fff;
+	letter-spacing: 1px;
+}
+
+.nav-local li:nth-child(2)::before {
+	display: block;
+	margin-bottom: .5rem;
+	content: 'Next';
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color:  #fff;
+	letter-spacing: 1px;
+}
+
+.nav-local a {
+	margin: 0;
+	font-family: 'Domine', serif;
+	font-size:  1.5rem;
+	color: #fff;
+	text-shadow: 0 0 20px rgba(0,0,0,.8);
+}
+
+@media screen and (min-width: 47.5rem){
+
+	.nav-local li:nth-child(1){
+		float: left;
+		width: 50%;
+	}
+
+	.nav-local li:nth-child(2){
+		float: right;
+		width: 50%;
+		text-align: right;
+		padding-left: 0;
+		padding-right: 5%;
+	}
+
+}
+
+
+/* NAV LOCAL SPECIFIC IMAGES */
+
+.recipe-chicken .nav-local li:first-child {
+	background: url(../img/tomatoes-02.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.recipe-chicken .nav-local li:last-child {
+	background: url(../img/roast-veg-02.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.recipe-roast-veg .nav-local li:first-child {
+	background: url(../img/chicken-10a.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.recipe-roast-veg .nav-local li:last-child {
+	background: url(../img/tomatoes-02.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.recipe-tomatoes .nav-local li:first-child {
+	background: url(../img/chicken-10a.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.recipe-tomatoes .nav-local li:last-child {
+	background: url(../img/roast-veg-02.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+
+/* MAIN FOOTER */
+
+footer {
+	clear: both;
+	overflow: hidden;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: .875rem;
+	letter-spacing: 1px;
+}
+
+.copyright {
+	margin: 0;
+	padding-left: 5%;
+	line-height: 2.25rem;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0 0 0 5%;
+	list-style-type: none;
+	line-height: 2.25rem;
+}
+
+footer li {
+	display: inline-block;
+}
+
+footer li a {
+	display: inline-block;
+	margin-left: .25rem;
+	color: #fff;
+}
+
+footer li a i {
+	font-size:  1.5rem !important;
+}
+
+@media screen and (min-width: 47.5rem){
+
+	.copyright {
+		float: left;
+		width: 65%;
+		line-height: 4.5rem;
+	}
+
+	.nav-social {
+		float: left;
+		width: 30%;
+		margin-right: 5%;
+		margin-left: 0;
+		text-align: right;
+		line-height: 4.5rem;
+	}
+
+}
+
+
+/* INNER PAGE SPECIFICS */
+
+.page-inner footer {
+	background-color: #999;
+}
+
+
+/* FULL PAGE SPECIFICS */
+
+.full-page, .full-page body {
+	height: 100%;
+}
+
+.full-page header {
+	position: fixed;
+	width: 100%;
+	height: 4.5rem;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	z-index: 10;
+}
+
+.full-page footer {
+	position: fixed;
+	width: 100%;
+	/*height: 4.5rem;*/
+	bottom: 0;
+	left: 0;
+	background-color: transparent;
+}
+
+.full-page main {
+	height: 100%;
+}
+
+
+
+.page-inner header {
+	color:  #fff;
+	background:  url(../img/cutting-board-menu.jpg) no-repeat top center;
+}
+
+.page-menu footer {
+	color: #757575;
+}
+
+.page-inner footer {
+	background-color: #212121;
+	color: #757575;
+}
+
+.page-menu footer li a,
+.page-inner footer li a {
+	color: #757575;
+
+}
+
+header .nav-main a {
+	color:  #fff;
+}
+
+
+/* GRAYSCALE IMAGES */
+
+.page-inner .nav-local img, .page-menu main img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: .9;
+    display: block;
+    margin-bottom: 1rem;
+    transition: all .4s;
+}
+
+
+/* OVERLAY NAV */
+
+.overlay-nav {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index:  1000;
+}
+
+.js-hide {
+	display: none;																																																																																																					
+}
+
