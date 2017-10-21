@@ -11,7 +11,7 @@ mainMenu.setAttribute("class","main-menu js-hide");
 document.body.appendChild(mainMenu);
 
 var menuClose = document.createElement("a");
-menuClose.setAttribute("class","menu-close");
+menuClose.setAttribute("class","menu-close js-hide");
 var menuCloseIcon = document.createElement("i");
 menuCloseIcon.setAttribute("class","fa fa-times");
 menuCloseIcon.setAttribute("aria-hidden","true");
