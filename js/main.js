@@ -66,6 +66,7 @@ function loadNav(){
 	   	showNav();
 	  } else {
 	    // We reached our target server, but it returned an error
+	    alert("Error");
 	  }
 	};
 	request.onerror = function() {
