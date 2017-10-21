@@ -49,7 +49,6 @@ header {
 	position: relative;
 	background-color: #ccc;
 	position: relative;
-	z-index: 2;
 }
 
 header h1 {
@@ -675,6 +674,7 @@ footer li a i {
 	top: 0;
 	left: 0;
 	background-color: transparent;
+	z-index: 2;
 }
 
 .full-page footer {
