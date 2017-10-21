@@ -2,7 +2,6 @@
 
 var menuOpen = document.querySelector(".menu-open");
 var header = document.querySelector("header");
-var loaded = 0;
 
 
 // Create Nodes
@@ -33,18 +32,6 @@ menuOpen.addEventListener("click", function(e){
 
 
 // Functions
-
-function hideNav(){
-	mainMenu.classList.add("js-hide");
-	menuClose.classList.add("js-hide");
-	menuOpen.classList.remove("js-hide");
-}
-
-function showNav(){
-	menuOpen.classList.add("js-hide");
-	mainMenu.classList.remove("js-hide");
-	menuClose.classList.remove("js-hide");
-}
 
 function init(){
 	// Hide nav open button until nav is loaded
@@ -79,6 +66,18 @@ function loadNav(){
 	  alert("Error");
 	};
 	request.send();
+}
+
+function hideNav(){
+	mainMenu.classList.add("js-hide");
+	menuClose.classList.add("js-hide");
+	menuOpen.classList.remove("js-hide");
+}
+
+function showNav(){
+	menuOpen.classList.add("js-hide");
+	mainMenu.classList.remove("js-hide");
+	menuClose.classList.remove("js-hide");
 }
 
 
