@@ -215,12 +215,6 @@ header a {
 /* MENU - MAIN */
 
 .main-menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
 	background: url(../img/cutting-board-menu.gif);
 }
 
@@ -303,6 +297,15 @@ header a {
 
 @media screen and (min-width: 47.5rem){
 
+	.main-menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	
 	.main-menu ul {
 		top: 50%;
 		position: relative;
